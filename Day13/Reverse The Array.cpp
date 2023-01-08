@@ -1,0 +1,17 @@
+//Problem Statement: 
+//Given an array of integers and a position M. You have to reverse the array after that position 
+#include <bits/stdc++.h> 
+void reverseArray(vector<int> &arr , int m)
+{
+	// Write your code here.
+    int start = m+1;
+    int end = arr.size()-1;
+    while(start<=end)
+    {
+        int t = arr[start];
+        arr[start]=arr[end];
+        arr[end]=t;
+        start++;
+        end--;
+    }
+}
